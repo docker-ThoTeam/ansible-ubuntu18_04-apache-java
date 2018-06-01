@@ -3,6 +3,7 @@ FROM ubuntu:18.04
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y \
+        systemd \
         apache2 \
         openjdk-8-jre-headless \
         python \
