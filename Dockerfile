@@ -11,7 +11,6 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
         python \
         python-apt \
         sudo \
-        bash \
         ca-certificates \
         cron \
         rsync && \
