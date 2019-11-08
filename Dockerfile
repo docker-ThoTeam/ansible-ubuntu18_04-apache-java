@@ -13,7 +13,9 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
         sudo \
         ca-certificates \
         cron \
-        rsync && \
+        rsync \
+        curl \
+        apt-transport-https && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     a2enmod ssl rewrite proxy proxy_http headers
